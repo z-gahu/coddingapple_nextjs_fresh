@@ -10,9 +10,9 @@ export default function List() {
   return (
     <div>
       <h2>Products</h2>
-      {상품.map((item) => {
+      {상품.map((item, i) => {
         return (
-          <div className="food">
+          <div className="food" key={i}>
             <h4>{item} $40</h4>
           </div>
         );

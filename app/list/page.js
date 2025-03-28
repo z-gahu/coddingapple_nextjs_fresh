@@ -10,10 +10,10 @@ export default function List() {
   return (
     <div>
       <h2>Products</h2>
-      {상품.map(() => {
+      {상품.map((item) => {
         return (
           <div className="food">
-            <h4>{상품[0]} $40</h4>
+            <h4>{item} $40</h4>
           </div>
         );
       })}

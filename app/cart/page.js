@@ -12,6 +12,8 @@ export default function Cart() {
       <CartItem item={장바구나[1]} />
       <Banner content="롯데카드" />
       <Banner content="현대카드" />
+      <MakeButton boxColor="red" />
+      <MakeButton boxColor="blue" />
     </div>
   );
 }
@@ -28,4 +30,9 @@ function CartItem(props) {
 
 function Banner(props) {
   return <h5>{props.content} 결제 행사중</h5>;
+}
+
+function MakeButton(props) {
+  // return <button style={{ backgroundColor: "red" }}>버튼</button>;
+  return <button style={{ backgroundColor: props.boxColor }}>버튼</button>;
 }
